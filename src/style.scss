@@ -1,0 +1,72 @@
+@import "variables";
+
+/* ui */
+
+h1,
+h2,
+p,
+a{
+    color: $dark;
+}
+
+a{
+    text-decoration: none;
+}
+
+html,
+body{
+    margin: 0;
+}
+
+/* Index */
+
+.index{
+    &-container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &-header{
+        z-index: 10;
+
+        &-title{
+            text-align: center;
+        }
+    }
+    &-main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+
+        &-left,
+        &-right{
+            width: 50%;
+            height: 100%;
+        }
+
+        &-left{
+            background-color: $primary-color;
+        }
+
+        &-right{
+            background-color: $secondary-color;
+        }
+    }
+
+    &-footer{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        
+        &-link{
+            margin: 10px 0;
+        }
+    }
+}

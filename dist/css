@@ -1,0 +1,60 @@
+/* ui */
+h1,
+h2,
+p,
+a {
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+/* Index */
+.index-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.index-header {
+  z-index: 10;
+}
+.index-header-title {
+  text-align: center;
+}
+.index-main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.index-main-left, .index-main-right {
+  width: 50%;
+  height: 100%;
+}
+.index-main-left {
+  background-color: #EEE0CB;
+}
+.index-main-right {
+  background-color: #839788;
+}
+.index-footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.index-footer-link {
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=css.map */
