@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "scripts": {
         "dev": "vite",
+        "build":"vite build",
         "compile-scss": "sass src/style.scss dist/css",
         "watch-scss": "sass src/style.scss dist/css --watch"
     },
